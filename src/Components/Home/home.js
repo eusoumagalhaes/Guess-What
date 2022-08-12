@@ -1,11 +1,12 @@
+//Styles
 import './home.css'
 
-const home = () => {
+const home = ({startGame}) => {
   return (
     <div className='home'>
         <h1>Guess The Marvel</h1>
         <p>Click on the button bellow and start the guessing</p>
-        <button className='btn'>BEGIN</button>
+        <button className='btn' onClick={startGame}>BEGIN</button>
     </div>
   )
 }
